@@ -568,7 +568,7 @@ pending_requests = {}
 async def cmd_reset(message: types.Message, command: CommandObject):
     user_id = message.from_user.id
     if not is_authorized(user_id):
-        text = "<b>❌ الوصول مرفوض، يرجى /login</b>\n\n<b>ليس لديك صلاحية لاستخدام هذه الميزة.</b>\n\n<b>للوصول أو الدعم، يرجى التواصل مع المشرف ← @DRIFTxCHEAT</b>"
+        text = "<b>❌ الوصول مرفوض، يرجى /login</b>\n\n<b>ليس لديك صلاحية لاستخدام هذه الميزة.</b>\n\n<b>للوصول أو الدعم، يرجى التواصل مع المشرف ← @PE_FQ</b>"
         kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="login🔑", callback_data="login_btn")]])
         await message.answer(text, reply_markup=kb)
         return
